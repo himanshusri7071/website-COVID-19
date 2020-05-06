@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+      <link rel="icon" href="https://1.bp.blogspot.com/-6CO2Xer1Lro/XpykmO36P7I/AAAAAAAABAM/8O-ySFZp2jAIdBC2wWHN05qQd-xYYWprgCNcBGAsYHQ/s1600/corona-logo.png">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!--<--font awasome--->
+    
+      <script src="https://kit.fontawesome.com/197d1cb87f.js"></script>
+
+<!--<--------->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Covid-19 Update</title>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+<!----------------Css------------------------>
+<style type="text/css">
+  *
+  {
+    font-size:16px;
+  }
+HTML{
+    
+    scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(https://1.bp.blogspot.com/-K_EdyO4pJRo/Xpykme7_b2I/AAAAAAAABAQ/o7yZe22tzYwxsKNn_ChO8Qw6gR6_RdfggCNcBGAsYHQ/s1600/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+   
+
+}
+    
+.container h2{
+    
+    color: white; 
+    position: absolute; 
+    left: 50%; top: 20%; 
+    transform: translate(-50%,-50%);
+}   
+
+.container img{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    width: 135px;
+    transition: 3s;
+    cursor: pointer;
+}
+
+.row
+{   position: relative;
+    margin-top: 200PX;
+    color: #fff;
+    
+}
+.resultbox:nth-child(1)
+  {
+        background: #006bb3;
+
+  }
+  
+.resultbox:nth-child(2)
+  {
+        background: #00994d;
+
+  }
+  
+.resultbox:nth-child(3)
+  {
+        background: #ffa64d;
+
+  }
+  
+.resultbox:nth-child(4)
+  {
+        background: #005580;
+
+  }
+.resultbox
+{
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.resultbox::hover
+{
+        background: rgba(187, 189, 188);
+
+}
+
+.nav-item
+{
+    margin-left: 60px;
+}
+
+
+
+.tablecorona
+{
+    background: linear-gradient(180deg,transparent,#000);
+  	font-family: 'Roboto', sans-serif;
+}
+
+.tablecorona h3{
+    
+    margin-top: 20px;
+    padding: 40px;
+    display: block;
+    background: linear-gradient(360deg,transparent,rgba(0,0,0,.5));
+}
+
+
+
+table tr th{
+    
+    color: black;
+    background-color: #a19a9a;
+    position: sticky;
+    top: 59px;
+}
+
+
+.sym
+{
+    color: whitesmoke;
+}
+
+
+
+/*<-------------------------------Section abot corona-----------------*/
+
+
+
+.jumbotron
+{   
+    color: white;
+    margin-top: 20px;
+    background: linear-gradient(360deg,transparent,#d9d9d9);
+    word-spacing: 1px;
+/*    background-attachment: inherit;*/
+}
+
+.sympim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.precautions p
+{
+    color: black;
+}
+
+
+/*----------------------------check yourself---------------------------*/
+
+
+.checkcorona
+{
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 0px 0px 30px black;
+    
+}
+
+
+.rowcheck
+{
+    transform: translate(0,-30%);
+/*
+    border: 1px solid yellow;
+    padding: 3px;
+*/
+}
+.lebel
+{
+    color: greenyellow;
+    font-weight: 200;
+}
+.inputbox
+{
+/*    margin-left: 40px;*/
+    width: 100%;
+    
+}
+.inputbox
+{
+    padding: 7px;
+}
+select
+{
+    width: 100%;
+}
+
+select option
+{
+    background-color: black;
+    color: white;
+}
+.inputbox input,select,option
+{
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: 1px solid yellow;
+/*    background: rgba(245, 241, 5);*/
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.button
+{
+    margin-top: 35px;
+}
+
+.button input
+{
+    margin-right: 20px;
+}
+
+
+.button input
+{
+    background-color: #1fa118;
+    border: none;
+    outline: none;
+    padding: 3px 12px;
+    color: white;
+    border-radius: 3px;
+}
+
+.button input:hover
+{
+    background-color: #16800a;
+    
+}
+
+
+
+/*<---footer------------------*/
+    
+
+        .fab
+        {
+            font-size: 20px;
+            margin: 5px;
+
+        }
+        .fab:hover
+        {
+            color: white;
+        }
+ 
+
+
+
+
+@media only  screen and (max-width: 700px)
+{
+  
+        .container img{
+     
+                        width: 100px;
+            
+                    }
+    
+    
+}
+
+
+.yellowback
+{
+     height: 500px; background-color: yellow;
+}
+@media only  screen and (max-width: 600px)
+{
+    
+    .yellowback
+    {
+        height: 0;
+        background-color: transparent;
+        
+    }
+    .checkcorona
+    {
+        margin-top: 50px;
+    }
+
+    .sympim img
+    {
+      width: 430px;
+       height: auto; 
+    }
+
+    
+}
+
+.test-result input
+{
+    margin-top: 10px;
+     width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid yellow;
+/*    background: rgba(245, 241, 5);*/
+    padding: 10px;
+    text-align: center;
+    color: yellow;
+    font-size: 18px;
+    text-transform: uppercase;
+   
+}
+
+
+/*--------------------------------------Team Section----------------------------*/
+
+.team-section
+        {
+            overflow: hidden;
+            text-align: center;
+            background-image: linear-gradient(to bottom right,transparent, #3e6aad, black);
+            padding: 60px;
+            
+        }
+    
+    .team-section h1
+        {
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            color: white;
+            font-size: 40px;
+            margin-top: 40px;     
+        }
+    .border
+        {
+            display: block;
+            margin: auto;
+            width: 160px;
+            height: 3px;
+            background: #3498db;
+            margin-bottom: 40px;
+        }
+        
+        .ps
+        {
+            margin-bottom: 40px;
+        }
+        
+        .ps a
+        {
+            display: inline-block;
+            margin: 0 30px;
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+            border-radius: 50%;
+            transition: all .3s ease-out;
+        }
+        
+        .ps a img
+        {
+            width: 100%;
+            filter: grayscale(100%);
+            transition: 0.4s all;
+        }
+
+        .ps a:hover
+        {
+            transform: translate(0, -7px);
+        }
+
+        .ps a:hover>img
+        {
+            filter: none;
+            
+        }
+    .section
+        {
+            max-width: 600px;
+            margin: auto;
+            font-size: 17px;
+            color: white;
+            text-align: justify;
+            height: 0;
+            overflow: hidden;
+        }
+        
+    .section:target
+        {
+            height: auto;
+            
+           
+        }
+    .name
+        {
+            display: block;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+  
+    </style>
+
+<link rel="me" href="https://www.blogger.com/profile/15855252239754982053" />
+</head>
+    
+  <body>
+    
+<!----------------Navbar------------------------>
+ <nav id='nav'  class="navbar  fixed-top navbar-expand-lg navbar-dark" id="remo" style="background-color: black; top: -60px; transition: 2s;">
+  <a class="navbar-brand" href="#top"><img src="https://1.bp.blogspot.com/-6CO2Xer1Lro/XpykmO36P7I/AAAAAAAABAM/8O-ySFZp2jAIdBC2wWHN05qQd-xYYWprgCNcBGAsYHQ/s1600/corona-logo.png" width="35px" height="33px">Covid-19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav my-2 my-lg-0">
+      <a class="nav-item nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#test">Test Yourself</a>
+      <a class="nav-item nav-link" href="#india">Corona In India</a>
+      <a class="nav-item nav-link" href="#Symptomps">Symptomps</a>
+      <a class="nav-item nav-link" href="#about">About Us</a>
+
+    </div>
+  </div>
+</nav>   
+      
+<section class="header">
+<div class="container">
+  <div class="slogan">
+        <h2>Stay Home!<br>Stay Safe</h2>
+  </div>
+        <img id="si" src="https://1.bp.blogspot.com/-hpQwzp_N2qs/XpykqjeqlrI/AAAAAAAABAk/CEhIW3xJlpQMlFDyIf0_MF4W1FFcjTxRQCNcBGAsYHQ/s1600/man.png" style="z-index: 1;" onclick="down()" class="animated slideInUp delay-1s">
+<div class="row animated slideInUp">
+    <div class="col-sm-3 resultbox"><h3 style="text-align: center;">Globally<br>Infected</h3><br>
+        <h3 style="text-align: center;" id="global1">_________</h3>
+    </div>
+    <div class="col-sm-3 resultbox"><h3 style="text-align: center;">Globally<br>Recover</h3><br>
+                <h3 style="text-align: center;" id="global2">_________</h3>
+
+    </div>
+    
+    <div class="col-sm-3 resultbox"><h3 style="text-align: center;">Globally<br>Death</h3><br>
+        <h3 style="text-align: center;"  id="global3">_________</h3>
+
+    </div>
+    
+    <div class="col-sm-3 resultbox"><h3 style="text-align: center;">Active<br>Cases</h3><br>
+        <h3 style="text-align: center;" id="global4">_________</h3>
+    </div>
+    
+
+</div>
+    </div>
+</section><br><hr>
+ <!-- --------------------In India------------->
+      
+<div class="container-fluid animated slideInUp" style="margin-top: 30px;" id="india">
+<h1 class="text-center text-white">Case In India</h1>
+    <div class="row" style="margin-top: 100px;">
+            
+        <div class="col-sm-4 text-center">
+            <h2 style="color:white;">Total Infected</h2>
+            <b><p id="ind1" style="padding:10px;color:#bfbfbf;font-size:23px;">------</p></b>
+        </div>
+        <div class="col-sm-4 text-center">
+            <h2 style="color:white;">Total Recover</h2>
+            <b><p id="ind2" style="padding:10px;color:#bfbfbf;font-size:23px;">------</p></b>
+        </div>
+        <div class="col-sm-4 text-center">
+            <h2 style="color:white">Total Death</h2>
+            <b><p id="ind3" style="padding:10px;color:#bfbfbf;font-size:23px;">------</p></b>
+        </div>
+    
+    </div>
+    
+</div>      
+      
+<!------------------------------Check corona---------------------------->
+<span id="test"></span>
+<br><br>
+  <form>
+      <h1 class="text-center text-white" style="text-shadow: 2px 2px black;">Check Your-Self<br><sup style="color: firebrick;">Covid-19</sup></h1><br>
+<div class="container checkcorona">
+     <div class="row rowcheck">
+
+             <div class="col-sm-1 yellowback">
+                
+             </div>
+            
+             
+             <div class="col-sm-5">
+                 <div class="lebel">
+                    <label>Enter Your Name</label>
+                 </div>
+              <div class="inputbox">
+                 <input id="name" type="text" name="name" required="" placeholder="Name">
+                </div>
+                 
+                  <div class="lebel">
+                    <label>What is your gender</label>
+                 </div>
+                <div class="inputbox">
+                    <select id="gender">
+                        <option value=60>MALE</option>
+                        <option value=60>FEMALE</option>
+                        <option value=60>OTHER</option>
+                    </select>
+                </div>
+             
+                
+                  <div class="lebel">
+                    <label>Enter your age:</label>
+                 </div>
+                 <div class="inputbox">
+                  <input type="number" id="age" required="" placeholder="Your Age">
+                 </div>
+
+                 <div class="lebel">
+                    <label>Have you ever came in contact of COVID-19 patient</label>
+                 </div>
+                 <div class="inputbox">
+                   <select id="check1">
+                        <option value=0>Don't Know</option>
+                        <option value=90>Yes</option>
+                       <option value=0>No</option>
+                    </select>
+                 </div>
+                 
+                 
+                 
+                 <div class="lebel">
+                    <label>Have you ever came in contact of a person suffering from dry cough</label>
+                 </div>
+              <div class="inputbox">
+                   <select id="check2">
+                        <option value=0>Don't Know</option>
+                        <option value=40>Yes</option>
+                       <option value=0>No</option>
+                    </select>
+                </div>
+                 <div class="lebel">
+                     <label>Is anyone from your family or neighbour visited in foreign country (<b>Exp:</b> China, USA, Itely, Spain)</label>
+                 </div>
+           <div class="inputbox">
+                   <select id="check3">
+                       <option value=0>No</option>
+                       <option value=90>Yes</option>
+
+                    </select>
+           </div>
+                 
+            </div>
+             <div class="col-sm-2">            
+
+         </div>
+             <div class="col-sm-4">            
+                                
+                <div class="lebel">
+                    <label>Do you have following health problem</label>
+                 </div>
+                 <div class="checkbox">
+                  <input type="checkbox" id="c1">Asthma <br>
+                   <input type="checkbox" id="c2">Diabetes<br>
+                  <input type="checkbox" id="c3">Cancer<br>
+                  <input type="checkbox" id="c4">Heart Disease<br>
+                     <input type="checkbox" id="c5">Chronic Respiratory Disease<br>
+                   <input type="checkbox" id="c6">Immunocompromised Patient<br>
+                  <input type="checkbox" id="c7">Pregnancy<br>
+                  <input type="checkbox" id="c8">None Of Above<br>
+
+                 </div>
+
+                 
+                 <div class="lebel">
+                    <label>Do you have following symptoms</label>
+                 </div>
+                     <div class="checkbox">
+                      <input type="checkbox" id="c21">Common Flue <br>
+                       <input type="checkbox" id="c22">Aches and Pain<br>
+                      <input type="checkbox" id="c23">Shortness of Breath<br>
+                      <input type="checkbox" id="c24">Sore Throat<br>
+                      <input type="checkbox" id="c25">Nasal Congestion<br>
+                       <input type="checkbox" id="c26">Diarrhea<br>
+                      <input type="checkbox" id="c27">None Of Above<br>
+
+                     </div>
+                 
+                 <div class="test-result">
+                 <input id="result" type="text" name="testresult" placeholder="Test Result">
+                </div>
+                 
+                 <div class="button">
+                    <input type="button" value="Check Now" onclick="test()">
+                     <input type=reset value="Clear">
+
+                 </div>
+                 
+              
+                 
+             </div>
+
+    </div>
+
+</div>
+      </form>
+ 
+
+<!-----------------------Table ------------------------------------------------------------------------>
+      
+      
+      
+<section class="tablecorona">
+    
+    <div class="mb-3">
+        <h3 class="text-center text-uppercase text-white">covid-19 global update</h3>
+    </div>
+    
+    <div class="container">
+    <div class="table_responsive">
+        <table class="table table-bordered table-striped text-center" id="tbval">
+            <tr>
+                    <th>Country</th>
+                    <th>Total Confirmed</th>
+                    <th>Total Recovered</th>
+                    <th>Total Deaths</th>
+                  <!--    
+              		<th>New Confirmed</th>
+ 	             	<th>New Recovered</th>
+                    <th>New Deaths</th>
+					-->
+
+            </tr>
+        
+        </table></div>
+    </div>
+</section>
+
+      
+<!--<--------------------About Corona Section------------------------>
+      
+          <div class="jumbotron">
+              <div class="heading text-center">
+                  <h1>Whats is Cororna?</h1>
+              <img class="animated infinite heartBeat delay-2s" src="https://1.bp.blogspot.com/-6CO2Xer1Lro/XpykmO36P7I/AAAAAAAABAM/8O-ySFZp2jAIdBC2wWHN05qQd-xYYWprgCNcBGAsYHQ/s1600/corona-logo.png" width="100px" height="90px">
+                <p style="color: black;">
+                
+                    <b>"Corona_viruses"</b> are a group of related viruses that cause diseases in mammals and birds.<br>
+                     In humans, coronaviruses cause respiratory tract infections that can range from mild to lethal.<br>
+                     Mild illnesses include some cases of the common cold (which has other possible causes, 
+                    predominantly rhinoviruses),<br>while more lethal varieties can cause SARS, MERS, and <b>"COVID-19"</b>.<br>
+                    There are yet to be vaccines or antiviral drugs toprevent or treat human coronavirus infections.<br>
+                
+                  <p class="text-center" style="font-size: 20px;"><b>History</b></p>
+
+                <p style="color: black;">
+
+                  <b>"Corona_viruses"</b> were first discovered in the 1930s when an acute respiratory infection of 
+                    domesticated chickens was shown to be caused by infectious bronchitis virus (IBV). 
+                    In the 1940s, two more animal coronaviruses, mouse hepatitis virus (MHV)<br>
+                     and transmissible gastroenteritis virus (TGEV), were isolated.
+
+                  </p>
+                  
+              </div>
+      <hr>
+
+              <div class="precautions text-center" id="Symptomps">
+                <h1>Covid-19 In Humans</h1>
+                 <img class="animated flipInX delay-4s" src="https://1.bp.blogspot.com/-sa0YLLkEVAk/XpykpgptfRI/AAAAAAAABAc/8zIdB3IZ1cwX1holQRYwoNZJ-yn9Pbd_wCNcBGAsYHQ/s1600/infected-man.png" width="100px" height="90px">
+
+                  <p class="text-center" style="font-size: 20px;"><b style="color:white;">Discovered</b></p>
+              <p style="color: black;">      
+                  Human <b>"Corona_viruses"</b> were discovered in the <b>1960s</b>.
+                 <br>The earliest ones studied were from human patients with the common cold,
+                     which were later named human "Corona_viruses" 229E and human coronavirus OC43.
+                  <br>They were first imaged by <b>"Scottish virologist"</b> June Almeida at St. Thomas Hospital in London.
+                  <br>Other human coronaviruses have since been identified,including<br><b>"SARS-CoV in 2003, 
+                  HCoV NL63 in 2004, HKU1 in 2005, MERS-CoV in 2012, and SARS-CoV-2 in 2019.</b> 
+                <br>Most of these have involved serious respiratory tract infections.
+                  </p>
+             <p class="text-center" style="font-size: 20px;"><b style="color:white;">Came In Figure</b></p>
+              <p style="color: black;">      
+
+                  In <b>December 2019</b>, a pneumonia outbreak was reported in <b>Wuhan, China.On 31 December 2019,</b> the outbreak was traced to a novel strain of coronavirus, which was given the interim name <b>2019-nCoV</b> by the <b>World Health Organization(WHO),</b>later renamed <b>SARS-CoV-2</b> by the International Committee on Taxonomy of Viruses.<br>Some researchers have suggested the Huanan Seafood Wholesale Market may not be the original source of viral transmission to humans.<br>
+                  As of <b>16 April 2020,</b> there have been at least <b>137,078</b> confirmed deaths and more than <b>2,064,815</b> confirmed cases in the <b>coronavirus pneumonia pandemic.</b> The Wuhan strain has been identified as a new strain of Betacoronavirus from group 2B with approximately 70% genetic similarity to the <b>SARS-CoV.</b><br>
+             The virus has a 96% similarity to a bat coronavirus, so it is widely suspected to originate from bats as well. The pandemic has resulted in travel restrictions and nationwide lockdowns in several countries.
+
+                  </p>
+                  
+                </div>
+      <hr>
+              
+              
+<!--    ----------------------structure of covid-19--------------------->
+
+              
+              <div class="precautions text-center" id="Symptomps">
+                <h1>Covid-19 Structure</h1>
+                 <img class="animated heartBeat delay-4s" src="https://1.bp.blogspot.com/-NJOi6KOKLP4/XpykuayY7SI/AAAAAAAABA8/PWbnSKGAYGY3lDkvM4BHydYyG03Bbg--wCNcBGAsYHQ/s1600/structure.png" width="200px" height="80px">
+
+                  <p class="text-center" style="font-size: 20px;"><b style="color:white;">Structure</b></p>
+              <p style="color: black;">      
+                 
+                  <b>Coronaviruses</b> are large pleomorphic <b>spherical</b> particles with bulbous surface projections.<br>
+                    The average <b>diameter</b> of the virus particles is around <b>120 nm (.12 μm).</b> 
+                  The diameter of the envelope is <b>~80 nm (.08 μm)</b> and the spikes are <b>~20 nm (.02 μm)</b> long.<br> 
+                    The envelope of the virus in electron micrographs appears as a distinct pair of electron dense shells.<br>
+                    The viral envelope consists of a lipid bilayer where the membrane, envelope and spike  structural proteins are anchored. <br>
+                    A subset of coronaviruses (specifically the members of <b>betacoronavirus subgroup A</b>) <br> 
+                    Inside the envelope, there is the <b>nucleocapsid, </b> which is formed from multiple copies of the nucleocapsid (N) protein,
+                     Which are bound to the positive-sense single-stranded RNA genome in a continuous beads-on-a-string type conformation. <br>
+                    The lipid bilayer envelope, membrane proteins, and nucleocapsid protect the virus when it is outside the host cell.
+      
+                  </p>
+             <p class="text-center" style="font-size: 20px;"><b style="color:white;">Life cycle of Coronavirus Entry</b></p>
+              <p style="color: black;">      
+
+                  Infection begins when the viral spike (S) glycoprotein attaches to its complementary host cell receptor.
+                    After attachment, a protease of the host cell cleaves and activates the receptor-attached spike protein. 
+                    Depending on the host cell protease available, cleavage and activation allows the virus to enter the host cell by endocytosis or direct fusion of the viral envelop with the host membrane.<br>
+                    On entry into the host cell, the virus particle is uncoated, and its genome enters the cell cytoplasm.
+                    The coronavirus <b>RNA genome has a 5′ methylated cap and a 3′ polyadenylated tail</b>, which allows the RNA to attach to the host cell's ribosome for translation.<br>
+                    The host ribosome translates the initial overlapping open reading frame of the virus genome and forms a long polyprotein. The polyprotein has its own proteases which cleave the polyprotein into multiple nonstructural proteins.
+                  
+                  </p>
+                  
+                </div>
+      <hr>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+<!----------------------symptoms------------------------>
+   <div class="symptom">
+                <h1 class="text-center">Symptoms!</h1>
+                <div class="sympim">
+             <img class="symptimg" src="https://1.bp.blogspot.com/-QawbR7rEfeU/XpykuyTiy3I/AAAAAAAABBE/9vL7asNRF94uuejJngekQ6YhxTDfSBFOACNcBGAsYHQ/s1600/symptom.png" width="800px" height="190px">
+              </div>
+            <div class="para" style="display: flex; justify-content: center; background: rgba(0,0,0,0.5); padding: 30px;" >
+            <p class="sym" style="padding: 8px; line-height: 40px; font-size: 13px; letter-spacing: 1px;">
+                <b style="color:#e0d863; font-size:17px;">No.1-</b> The most common symptoms of <b>COVID-19</b> are <b>fever, tiredness, and dry cough.</b><br>
+                <b style="color:#e0d863; font-size:17px;">No.2-</b> Some patients may have aches and <b>pains, nasal congestion, runny nose, sore throat or diarrhea.</b> These symptoms                            are usually mild and begin gradually.<br>
+                <b style="color:#e0d863; font-size:17px;">No.3-</b> Some people become infected but don’t <b>"develop any symptoms and don't feel unwell".</b> Most people (about 80%) recover from the disease without needing special treatment. Around <b>1 out of every 6</b> people who gets <b>COVID-19</b> becomes seriously ill and develops <b>"difficulty breathing"</b>.<br>
+                
+                <b style="color:#e0d863; font-size:17px;">No.4- </b><b>Older people</b>, and those with underlying medical problems like high <b>blood pressure, heart problems or diabetes,</b> are more likely to develop serious illness.<br>
+
+                <b style="color:#e0d863; font-size:17px;">No.5- </b>People with <b>(fever, cough and difficulty breathing)</b> should seek medical attention.<br>
+
+            </p>    
+                </div>
+              </div>  
+
+        <hr>
+<!----------------------precautions------------------------>
+
+            <div class="precautions">
+                    <h1 class="text-center">Precautions!</h1>
+
+                        <div class="row" style="margin-top: 50px; background: rgba(230, 235, 234,0.5); padding: 40px;">
+
+              <div class="col-sm-2">
+                  <img src="https://1.bp.blogspot.com/-9ajHaAjQKSM/XpyksuPaO-I/AAAAAAAABA0/1TzpWfNMc7AGDQ_i0kNXdvPT7H5y2N4kACNcBGAsYHQ/s1600/prec4.png.png" width="150px" height="150px">
+                </div>
+             <div class="col-sm-4">
+                 <h2>Wash your hands frequently</h2>
+  <p>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.<br>
+
+      <b>Why?</b> Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.</p>
+
+              </div>
+<div class="col-sm-2">
+                  <img src="https://1.bp.blogspot.com/-ielMCsWybpw/Xpykr3W5kCI/AAAAAAAABAs/o9i72KxgNFgnyYJNmKehmhw9mOFAudnJgCNcBGAsYHQ/s1600/prec2.png" width="150px" height="150px">
+                </div>
+             <div class="col-sm-4">
+                 <h2>Avoid handshaking just say Namastay!</h2> 
+      <p>To prevent COVID-19 it is safest to avoid physical contact when greeting.<br>Safe greetings include a wave, a nod,or a bow<br>
+          <b>Why?</b> Virus can be passed by shaking hands and touching your eyes,nose and mouth.
+                 
+                 </p>
+
+              </div>
+                  <div class="col-sm-2">
+                  <img src="https://1.bp.blogspot.com/-_WJ_jdOvf3w/XpyksXXmB7I/AAAAAAAABAw/9vEypEDAHS0Ofm9wLfi68eu3B8WBRBvawCNcBGAsYHQ/s1600/prec3.png" width="150px" height="150px">
+                </div>
+             <div class="col-sm-4">
+                 <h2>Use Of Mask</h2>
+    <p>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+                wear mask whenever you go outside for important work other saty home is best for you and your family.<br>
+        
+        <b>Why?</b> By using a mask it the risk of corona.<br>So whenever you get out of the house, leave with a mask.
+                </p>
+
+              </div>
+<div class="col-sm-2">
+                  <img src="https://1.bp.blogspot.com/-70v_L6Ya0i8/Xpykq0-06xI/AAAAAAAABAo/SV476OAtVSgPN-T4pk7qeoM1wWzZl-pSwCNcBGAsYHQ/s1600/prec1.png" width="150px" height="150px">
+                </div>
+             <div class="col-sm-4">
+                 <h2>Use Of Sanitizer</h2>
+  <p>Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+Maintain a safe distance from anyone who is coughing or sneezing.<br>
+        <b>Why?</b> Use a sanitizer because the virus can stay alive on a surface for a long time.<br>So keep washing your household thgings regularly.
+                 </p>
+
+              </div>
+      
+                      
+                      
+          </div>
+      </div>
+ </div>      
+<!-----------------------------------Team Section------------------------->
+  <div id="about" class="team-section">
+    <h1>Team Member</h1>
+        <span class="border"></span>
+    <div class="ps">
+    <a href="#p1"><img src="https://1.bp.blogspot.com/-5_aeinkJp3g/XpyktVzeMdI/AAAAAAAABA4/M5d45pJk-100xR3NnW2e7mvxXhmiaofsACNcBGAsYHQ/s1600/shadab-1.png" ></a>    
+    <a href="#p2"><img src="https://1.bp.blogspot.com/-dCwdaVEY6ZE/XpykqSNpYyI/AAAAAAAABAg/33y05fUvUFIb74h_h5HKH4zMPHhI3TeZwCNcBGAsYHQ/s1600/jyoti.png" ></a>    
+    <a href="#p3"><img src="https://1.bp.blogspot.com/-0TZWmXywE6Y/XpykopaO57I/AAAAAAAABAY/3hWqKrCmfh8xV68FSwgChi1wYlEaTlXVgCNcBGAsYHQ/s1600/himanshu.png" ></a>
+    </div>
+        
+    <div class="section" id="p1">
+    <span class="name">MOHD SHADAB</span>    
+    <span class="border"></span>    
+        <p>Hi, I am Mohd Shadab We made this project to serve nation and to aware people about this pandemic covid-19. I believe that this is just one real of our life. So let's come together and fight against #corona.<br>
+            If You have suggestion for us then you can contact us with follow link.
+        </p>
+    </div>    
+        
+         <div class="section" id="p2">
+    <span class="name">JYOTI GUPTA</span>    
+    <span class="border"></span>    
+        <p>
+           Hii This is Jyoti Gupta. I am pursuing B.Tech with specialization in computer science branch. I believe in coding and making life  easy and simple.           
+        </p>
+    </div>   
+        
+      <div class="section" id="p3">
+    <span class="name">HIMANSHU SRIVASTAVA</span>    
+    <span class="border"></span>    
+        <p>
+        Hi, This is Himanshu Srivastav I am pursuing B.tech with speclization in computer science branch and made this website under the guidance of Mohd Shadab to spread awareness regarding this pandemic covid-19.
+        He has a passion to learn about trending technology. He is very delicated, passionate towards his life. He is committed to his words and has good leadership qualities
+          </p>
+          </div>      
+        
+</div>
+    
+
+ <!--  
+    <div class="test-result">
+        <div class="show text-center" style="height: 60px; background-color: yellow;">
+        <h2 class="text-white">Result</h2>
+        </div>
+    </div>    
+-->
+
+<!--<---------Footer---------------      -->
+<footer class="page-footer font-small cyan darken-3" style="background-color: black;">
+
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"><p style="color:#a5a8a6">&copy; 2020 Copyright:</p>
+ <a href="https://covid19livetest.blogspot.com/?m=1"> Covid-19 Update </a>
+   
+        <p style="color:#a5a8a6">Follow Us:</p>
+        <p>
+        <a href="https://www.facebook.com/shaad718" target="newpage"><i class="fab fa-facebook-square"></i></a>
+       <a href="https://www.instagram.com/p/B8g2OM8H-aB/?igshid=1cqnbx4e5whz6" target="newpage">  <i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCTIV51BxoyuMc2U3HUjA-qg" target="newpage">   <i class="fab fa-youtube"></i></a>
+      </p>
+      <p style="color:#a5a8a6">Developed by: MOHD SHADAB</p>
+
+    </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+<!----------------All Scripts----------------------->
+      
+<script type="text/javascript">
+          
+
+fetch();          
+             
+   
+          function fetch(){
+            
+            $.get("https://api.covid19api.com/summary",
+                  
+             function(data){
+//                    console.log(data['Countries'].length);            
+                
+                            document.getElementById('global1').innerHTML=data['Global']['TotalConfirmed'];
+                            document.getElementById('global2').innerHTML=data['Global']['TotalRecovered'];
+
+                            document.getElementById('global3').innerHTML=data['Global']['TotalDeaths'];
+                
+//--------------------India Data------------------------------------------
+                                
+                            document.getElementById('ind1').innerHTML=data['Countries'][101]['TotalConfirmed'];
+                            document.getElementById('ind2').innerHTML=data['Countries'][101]['TotalRecovered'];
+
+                            document.getElementById('ind3').innerHTML=data['Countries'][101]['TotalDeaths'];
+                
+                
+                
+//--------------------------------------------------------------------------
+
+   document.getElementById('global4').innerHTML=data['Global']['TotalConfirmed']-data['Global']['TotalDeaths']-data['Global']['TotalRecovered'];
+
+                
+            var tbval = document.getElementById('tbval');
+//                console.log(tbval);
+                for(var i=1; i<data['Countries'].length;i++)
+                    {
+                    var x = tbval.insertRow();
+                        x.insertCell(0);
+                        tbval.rows[i].cells[0].innerHTML = data['Countries'][i-1]['Country'];
+                        tbval.rows[i].cells[0].style.background = '#ff8080';
+                        tbval.rows[i].cells[0].style.color = '#000';
+                        
+                        x.insertCell(1);
+                        tbval.rows[i].cells[1].innerHTML = data['Countries'][i-1]['TotalConfirmed'];
+                        tbval.rows[i].cells[1].style.background = '#ffe6e6';
+                        tbval.rows[i].cells[1].style.color = '#000';
+                        
+                        
+                        x.insertCell(2);
+                        tbval.rows[i].cells[2].innerHTML = data['Countries'][i-1]['TotalRecovered'];
+                        tbval.rows[i].cells[2].style.background = '#ffcccc';
+                        tbval.rows[i].cells[2].style.color = '#000';
+                        
+                        
+                        x.insertCell(3);
+                        tbval.rows[i].cells[3].innerHTML = data['Countries'][i-1]['TotalDeaths'];
+                        tbval.rows[i].cells[3].style.background = '#ffb3b3';
+                        tbval.rows[i].cells[3].style.color = '#000';
+                        
+    
+//                        x.insertCell(4);
+//                        tbval.rows[i].cells[4].innerHTML = data['Countries'][i-1]['NewConfirmed'];
+//                        tbval.rows[i].cells[4].style.background = '#ffe6e6';
+//                        tbval.rows[i].cells[4].style.color = '#000';
+//                        
+//                        
+//                        x.insertCell(5);
+//                        tbval.rows[i].cells[5].innerHTML = data['Countries'][i-1]['NewRecovered'];
+//                        tbval.rows[i].cells[5].style.background = '#ffcccc';
+//                        tbval.rows[i].cells[5].style.color = '#000';
+//                        
+//                        x.insertCell(6);
+//                        tbval.rows[i].cells[6].innerHTML = data['Countries'][i-1]['NewDeaths'];
+//                        tbval.rows[i].cells[6].style.background = '#ffb3b3';
+//                        tbval.rows[i].cells[6].style.color = '#000';
+//                        
+                                            
+                      
+                        
+                    
+                    }
+                
+            }
+            )
+          }
+//--------------On Scroll Effects-----------------------------------//          
+             
+    $(document).ready(function(){
+      $(window).scroll(function(){
+          var topposi = $(document).scrollTop();
+//          console.log(topposi);
+          if(topposi>40)
+              {
+        
+                           document.getElementById('nav').style.top="0px";
+
+
+              }
+
+          if(topposi<40)
+              {
+        
+                           document.getElementById('nav').style.top="-60px";
+
+
+              }
+   
+
+          if(topposi>200)
+              {
+        
+                           document.getElementById('si').style.bottom='-295px';
+
+              }
+          if(topposi>13300)
+              {
+                  document.getElementById('si').style.bottom='0px';
+              }
+
+        
+        });
+          
+        
+          
+      });
+          
+//-----------Img On Click----------------//
+          
+    function down(){
+       
+       document.getElementById('si').style.bottom='-295px';
+   }
+
+      
+      
+<!--//---------------------Test corona-------------------//-->
+      
+function test()
+{
+    
+    var name = document.getElementById('name').value;
+
+    var gender = document.getElementById('gender').value;
+
+    var opt1 = document.getElementById('check1').value;
+
+    var opt2 = document.getElementById('check2').value;
+
+    var opt3 = document.getElementById('check3').value;
+
+    var age = document.getElementById('age').value;
+    
+    if(name.trim()==""||age.trim()==""||age<=0)
+                 {
+                     alert("Please Fill Details Correctly");
+                     return false;
+                     
+                 }
+    
+    var check1 = document.getElementById("c1").checked;
+    var check2 = document.getElementById("c2").checked;
+    var check3 = document.getElementById("c3").checked;
+    var check4 = document.getElementById("c4").checked;
+    var check5 = document.getElementById("c5").checked;
+    var check6 = document.getElementById("c6").checked;
+    var check7 = document.getElementById("c7").checked;
+    var check8 = document.getElementById("c8").checked;
+    
+    var val;
+    
+    if(check8==0)
+    {
+        
+        val = 0+check1+check2+check3+check4+check5+check6+check7;
+        if(val==0)
+            {
+                val=0;
+            }
+        else
+            {
+                val=100;
+                
+            }
+        
+    }
+    else
+        {
+            val = 0;
+            
+        }
+
+
+
+    var check21 = document.getElementById("c21").checked;
+    var check22 = document.getElementById("c22").checked;
+    var check23 = document.getElementById("c23").checked;
+    var check24 = document.getElementById("c24").checked;
+    var check25 = document.getElementById("c25").checked;
+    var check26 = document.getElementById("c26").checked;
+    var check27 = document.getElementById("c27").checked;
+    var result = document.getElementById("result");
+
+    var val2;
+    if(check27==0)
+    {
+        var val2 = 0+check21+check22+check23+check24+check25+check26;
+        if(val2==0)
+            {
+                val2=0
+                
+            }
+        else{
+            
+            val2=100;
+        }
+    
+    }
+    
+    else{
+            val2 = 0;
+        }
+
+    
+//    +parseInt(age)
+    
+var testresult = parseInt(gender)+parseInt(opt1)+parseInt(opt2)+parseInt(opt3)+parseInt(val)+parseInt(val2);
+    
+    
+if(gender=60)
+    {
+            
+        
+        if(age>0&&age<60)
+            {
+                    if(opt1==90)
+                    {
+                        
+                        result.value="Risk is 100%; You need medical chechup right now";
+                    }
+                
+                    else
+                    {
+                     
+                            if(testresult==390|| testresult==290 || testresult==300 || testresult==250 || testresult==260 || testresult==350)
+                            {
+                               result.value="Risk is 99% You need medical chekcup;";
+                            }
+                            if(testresult==190 || testresult==150 || testresult==200 || testresult==160)
+                            {
+                                result.value="Risk is 80%";
+                            }
+                            if(testresult==100)
+                                {
+                                    result.value="rsik is 40% you don't need to worry";
+                                }
+                            if(testresult==60)
+                                {
+                                    result.value="Don't Worry Just Follow Lock Donwn And Stay At Home";
+                                }
+
+                    }
+            }
+        else
+            {
+                if(opt1==90)
+                    {
+                        
+                        result.value="Risk is 100% ; You need exra care contact covid-19 helpline and stay in quarantine;";
+                    }
+                
+                    else
+                    {
+                     
+                            if(testresult==390|| testresult==290 || testresult==300 || testresult==250 || testresult==350 || testresult==260)
+                            {
+                                result.value="Risk is 99% You need medical chekcup;";
+                            }
+                            if(testresult==190 || testresult==150 || testresult==200 || testresult==160)
+                            {
+                                result.value="Risk is 100%";
+                            }
+                            if(testresult==100)
+                                {
+                                    result.value="risk is 60% ";
+                                }
+                            if(testresult==60)
+                                {
+                                    result.value="Don't Worry Just Follow Lock Donwn And Stay At Home";
+                                }
+
+                    }
+                
+            }
+        
+    }
+    
+alert(`Hello ${name} Thank You For Using Our Site ;)`);
+}
+
+      
+</script>      
+      
+      
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
